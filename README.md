@@ -19,7 +19,7 @@ Show all MongoDB parameters<br>
 Example: mongo show_parameters.js
 
 **set_parameter_loglevel.js**<br>
-Sets verbosity of the logging, specifying an integer between 0 and 5  where 5 is the most verbose.
+Sets verbosity of the logging, specifying an integer between 0 and 5  where 5 is the most verbose.<br>
 Example: mongo set_parameter_loglevel.js
 
 **repair_database.js** <br>
