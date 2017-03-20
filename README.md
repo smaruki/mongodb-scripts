@@ -30,3 +30,13 @@ Example: mongo repair_database.js
 **show_all_dbstats.js** <br>
 Show all paramaters and stats from database.
 Example: mongo show_all_dbstats.js > all_stats.log
+
+**index_replicate.js** <br>
+Copies the indexes from one instance to another
+Set variables: 
+drop_indexes_before = <bool>
+host_name_master = <host_from>;
+db_name_master = <db_from>;
+host_name_replica = <host_to>;
+db_name_replica = <db_to>;
+Example: mongo index_replicate.js
