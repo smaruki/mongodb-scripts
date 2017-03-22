@@ -1,4 +1,4 @@
-#mongodb-scripts
+# mongodb-scripts
 Useful scripts for administrate and operate MongoDB.
 
 **show_collections_size.js** <br>
