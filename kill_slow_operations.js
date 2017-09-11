@@ -7,7 +7,7 @@ db.currentOp().inprog.forEach(
     function(d){
         if(d.active && d.secs_running>secs_limit){
                 var op = db.killOp(d.opid);
-                print(op);
+                printjson(op);
              }
         })
 
