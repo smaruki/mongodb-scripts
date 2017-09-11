@@ -16,6 +16,9 @@ Example:
 > mongo show_slow_operations.js
 ```
 
+**find_random_document.js**<br>
+Finds a random document according to a number of records in a collection.<br>
+
 **kill_slow_operations.js**<br>
 Kill all operations running over x seconds.<br>
 Example: 
@@ -55,6 +58,7 @@ Example:
 **index_replicate.js** <br>
 Copies the indexes from one instance to another.<br>
 Set variables: <br>
+
 ```
 drop_indexes_before = [bool];
 host_name_master = [host_from];
