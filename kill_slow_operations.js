@@ -5,7 +5,7 @@ var secs_limit = 10
 
 db.currentOp().inprog.forEach(
     function(d){
-        if(d.active && d.secs_running>secs_limit){
+        if(d.active && d.op=="query" && d.secs_running>secs_limit){
                 var op = db.killOp(d.opid);
                 printjson(op);
              }
