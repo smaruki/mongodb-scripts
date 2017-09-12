@@ -7,13 +7,13 @@ Show collections size in MB <br>
 Replace to your database name.<br>
 Example: 
 ```
-> mongo get_collections_size.js
+mongo get_collections_size.js
 ```
 **show_slow_operations.js** <br>
 Show operations running over x seconds.<br>
 Example: 
 ```
-> mongo show_slow_operations.js
+mongo show_slow_operations.js
 ```
 
 **find_random_document.js**<br>
@@ -23,21 +23,21 @@ Finds a random document according to a number of records in a collection.<br>
 Kill all operations running over x seconds.<br>
 Example: 
 ```
-> mongo kill_slow_operations.js
+mongo kill_slow_operations.js
 ```
 
 **show_parameters.js**<br>
 Show all MongoDB parameters.<br>
 Example: 
 ```
-> mongo show_parameters.js
+mongo show_parameters.js
 ```
 
 **set_parameter_loglevel.js**<br>
 Sets verbosity of the logging, specifying an integer between 0 and 5  where 5 is the most verbose.<br>
 Example: 
 ```
-> mongo set_parameter_loglevel.js
+mongo set_parameter_loglevel.js
 ```
 
 **repair_database.js** <br>
@@ -45,14 +45,14 @@ Server side to do shrink and repair database. <br>
 Replace to your database and collection names.<br>
 Example: 
 ```
-> mongo repair_database.js
+mongo repair_database.js
 ```
 
 **show_all_dbstats.js** <br>
 Show all paramaters and stats from database.<br>
 Example: 
 ```
-> mongo show_all_dbstats.js > all_stats.log
+mongo show_all_dbstats.js > all_stats.log
 ```
 
 **index_replicate.js** <br>
@@ -68,5 +68,5 @@ db_name_replica = [db_to];
 ```
 Example: 
 ```
-> mongo index_replicate.js
+mongo index_replicate.js
 ```
