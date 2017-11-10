@@ -70,3 +70,14 @@ Example:
 ```
 mongo index_replicate.js
 ```
+
+**invert_hidden_members.js** <br>
+Invert hidden/votes/priority members in a replica set
+<br>
+members DC1: {"hidden" : false, "priority" : 1, "votes" : 1}<br>
+members DC2: {"hidden" : true, "priority" : 0, "votes" : 0}<br>
+Example:
+```
+mongo --host  mongodbhost:27017 -u user -p senha invert_hidden_members.js
+```
+
