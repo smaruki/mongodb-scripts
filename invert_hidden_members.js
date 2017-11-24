@@ -9,6 +9,8 @@ $ mongo --host  mongodbhost:27017 -u user -p senha invert_hidden_members.js
 
 
 function main(){
+    print("Initializing... (ctrl+c to cancel)")
+    sleep(5000)
     var membersList = getReplicaSetMembers()
     print("Before conf " + new Date())
     printjson(membersList)
