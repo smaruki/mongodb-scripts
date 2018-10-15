@@ -4,13 +4,14 @@
 * Author: Sergio Maruki
 */
 
-dropIndexesFromDest = false;
-
 hostOrig = '127.0.0.1:27017';
-dbNameOrig = 'mongo_netshoes';
+dbNameOrig = 'database1';
 
 hostDest = '127.0.0.1:27017';
 dbNameDest = 'database2';
+
+dropIndexesFromDest = false;
+removeBackgroundOption = true
 
 dbOrig = new Mongo(hostOrig).getDB(dbNameOrig);
 dbDest = new Mongo(hostDest).getDB(dbNameDest);
@@ -25,6 +26,9 @@ dbOrig.getCollectionNames().forEach(
             if(indexes[x]['name'] != '_id_'){
                 delete indexes[x]['v'];
                 delete indexes[x]['ns'];
+                if(removeBackgroundOption === true){
+                    delete indexes[x]['background'];
+                }
                 newIndexes.push(indexes[x]);
             }
         }
