@@ -1,7 +1,7 @@
 db.getCollectionNames().forEach(
     function(c){
         indexes = db.getCollection(c).getIndexes();
-        newIndexes = []
+        newIndexes = [];
         for(x in indexes){
             if(indexes[x]['name'] != '_id_'){
                 delete indexes[x]['v'];
@@ -12,9 +12,9 @@ db.getCollectionNames().forEach(
         }
         print("\n/*"+c+"*/");
         if(typeof newIndexes[0] !== 'undefined') {
-            print("db.runCommand(")
+            print("db.runCommand(");
             printjson({"createIndexes": c, "indexes": newIndexes});
-            print(");")
+            print(");");
         }
     }
 )
